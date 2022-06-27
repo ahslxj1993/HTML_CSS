@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서 대출</title>
+</head>
+<body>
+
+<form method=get action=result.html>
+<fieldset>
+<legend>도서 예약 대출</legend>
+<p>
+성명 :<input type=text name=p_name required autofocus> <br>
+전화 : <input type=tel name=p_tel
+	pattern=[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}
+	placeholder="00*-000*-0000"
+	required><br>
+이메일 : <input type=email name=p_email required><br>
+</p>
+도서명 : <input type=search name=sesarch required><br>
+
+예약 희망일 : <input  type=date name=date min=2022-06-25 required><br>
+
+수령 시간 : <input type=time min=09:00 max=18:00 name=former_time> 에서
+<input type=time min=09:00 max=18:00 name=later_time>
+
+<hr>
+<input type=submit value=예약하기>
+</fieldset>
+</form>
+</body>
+</html>

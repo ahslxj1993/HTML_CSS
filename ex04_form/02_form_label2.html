@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트 라벨 예제</title>
+</head>
+<body>
+	<p>라벨의 텍스트를 클릭해도 됩니다.
+		label태그의 for 속성값과 input 태그의 id 속성값이 같으면 라벨의 텍스트를
+			클릭해도 선택이 가능합니다.
+	</p>
+	
+	
+	<form method=get action=result.html>
+	<h1>오늘의 점심 메뉴는?</h1>
+	<input type=radio name=menu id=짜장면 value=짜장면 checked>
+	<label for=짜장면>짜장면</label>
+	<label for=짜장면><img src=짜장면.jpg width=100 height=100></label>
+	
+	<input type=radio name=menu id=짬뽕 value=짬뽕>
+	<label for=짬뽕>짬뽕</label>
+	<label for=짬뽕><img src=짬뽕.jpg width=100 height=100></label>
+	
+	<input type=radio name=menu id=탕수육 value=탕수육>
+	<label for=탕수육>탕수육</label>
+	<label for=탕수육><img src=탕수육.jpg width=100 height=100></label>
+	
+	<br>
+	<hr>
+	<input type=submit value=전송>
+	<input type=reset value=취소>
+	</form>
+</body>
+</html>

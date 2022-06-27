@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스 모델 :box-sizing:content-box</title>
+<!-- 각 HTML 태그 요소를 하나의 박스로 보고, 박스크기, 박스 배경 색, 박스 여백등
+HTML태그를 박스로 다루는 체계를 의미합니다.
+
+box-sizing :content-box
+CSS표준에 의해 정의된 기본 스타일로
+width와 heigth 속성은 오로지 콘텐츠만을 포함하여 측정되며,
+padding, border,margin을 포함하지 않습니다 -->
+<style>
+div {box-sizing:content-box;}
+
+#first {background : red}
+#second {width: 100px; height : 100px; background:orange;}
+#third{width:100px; height:100px; background:yellow; padding : 20px}
+
+/*padding(내부공백), margin (외부공백) 은 위, 오른쪽,아래,왼쪽 4가지의 값을 갖는다
+예1) padding : 10px 10px 10px 10px 또는
+	padding : 10px 작성한다
+	또는
+	padding-top :10px padding-right:10px
+	padding-bottom:10px padding-left:10px
+예2) padding : 10px 5px
+의미-위 아래는 10px 왼쪽 오른쪽은 5px 적용
+예3) padding : 10px 7px 8px
+의미- 위 10px적용 오른쪽 왼쪽7px 아래 8px*/
+
+#third_clip {background: yellow; width:100px ; height:100px; padding:20px;
+	border-width:1px; border-style:solid; border-color:black;
+	background-clip:content-box;}
+	/*
+	border : 1px solid black;
+	의미	:	굵기	스타일	색상
+	
+	또는
+	border-width : 1px; border-style:solid; border-color:black;
+			위,오른쪽,아래,왼쪽 모두 같은 속성값으로 적용하며
+	border를 1px 굵기의 검은색 선모양으로 나타냅니다.
+	
+		가로 100px, 세로 100px 크기의 yellow 색의 박스
+	background-clip : content-box ; padding 영역은 색상이 나타나지 않습니다
+	*/
+	
+#fourth {background:  green; width:100px; height:100px;
+		padding:20px; margin:20px}
+		
+#fifth {background:blue; width:100px;height:100px;
+		padding:20px; margin:20px;
+		border: 10px solid olive;
+		color:white}
+</style>
+</head>
+<body>
+<div id=first>first</div>
+<div id=second>second</div>
+<div id=third>third</div>
+<div id=third_clip>third_clip</div>
+<div id=fourth>fourth</div>
+<div id=fifth>fifth</div>
+</body>
+</html>

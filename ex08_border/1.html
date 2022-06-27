@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>테두리의 종류</title>
+<style>
+h4 {
+	font-family : "Consolas","돋움", serif;
+	margin-left : 12px;
+	margin-bottom : 20pt
+	}
+	
+p {
+	font-family: "Consolas","돋움", serif;
+	font-size: 10pt
+	}
+	
+span {
+	display:inline-block;
+	width: 300px;
+	text-align: center;
+	margin: 8px;
+	padding : 16px 22px 16px 22px;
+	border-width: 4px;
+	border-color : green
+	}
+
+#t1 {
+	border-style : solid
+	}
+
+#t2 {
+	border-style : dotted
+	}
+
+#t3 {
+	border-style : dashed
+	}
+
+#t4 {
+	border-style : solid
+	}
+#t5, #t6, #t7, #y8 {
+					padding : 14px 14px 14px 14px;
+					border-width: 10px;
+					border-color: green;
+					}
+
+#t5 {
+	border-style : inset
+	}
+
+#t6 {
+	border-style : outset
+	}
+
+#t7 {
+	border-style : ridge
+	}
+
+#t8 {
+	border-style : groove
+	}
+
+
+
+
+</style>
+</head>
+<body>
+ <h4 id=tt>border-style2</h4>
+ <p>
+ 	<span id=t1>solid-실선</span>
+ 	<span id=t2>dotted-둥근점선</span>
+ 	<span id=t3>dashed-사각형점선</span>
+ 	<span id=t4>double-이중실선</span>
+ </p>
+ 
+ <p>&nbsp;<br>&nbsp;</p>
+ 
+ <p>
+ 	<span id=t5>inset-내용이 담긴 느낌의 입체선 모양</span>
+ 	<span id=t6>outset-내용이 튀어나온 느낌의 입체선 모양</span>
+ 	<br>
+ 	<span id=t7>ridge-볼록하게 나온 액자 테두리모양</span>
+ 	<span id=t8>groove-오목하게 들어간 액자 테두리 모양</span>
+ </p>
+</body>
+</html>

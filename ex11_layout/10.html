@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>float</title>
+<!-- clear 속성을 이용해서  float 속성 무효회 하기
+	left: 왼쪽배치 무효화
+	right : 오른쪽 배치 무효회
+	both: 왼쪽, 오른쪽 모두 무효화
+	none: 기본값으로 어디든 float할수 있다, -->
+<style>
+	div {width:100px;height:100px;}
+	
+	#box1{
+		background-color:red;
+		float: right;
+		}
+	#box2{
+		background-color:blue;
+		float: right;
+		}
+	#box3{
+		background-color:green;
+		clear:right;
+		}
+</style>
+</head>
+<body>
+	<div id=box1></div>
+	<div id=box2></div>
+	<div id=box3></div>
+</body>
+</html>

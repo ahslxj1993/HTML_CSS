@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스 모델 :box-sizing:border-box</title>
+<!-- box-sizing :border-box;
+width와 height 속성이 padding 및 border를 포함하며,
+margin을 포함하지 않는다 -->
+<style>
+div {box-sizing:border-box;}
+#first {background:red}
+#second {background:orange;width:100px;height:100px}
+#third {background:yellow;width:100px;height:100px; padding:20px;}
+#fourth {background:green;width:100px;height:100px; padding:20px; margin:20px}
+#fifth {background:blue; width:100px;height:100px;
+		padding:20px; margin:20px;
+		border: 10px solid olive;
+		color:white}
+</style>
+</head>
+<body>
+<div id=first>first</div>
+<div id=second>second</div>
+<div id=third>third</div>
+<div id=fourth>fourth</div>
+<div id=fifth>fifth</div>
+</body>
+</html>

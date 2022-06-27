@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>none</title>
+
+<style>
+/*display 속성
+display: block 블록박스
+display: inline 인라인 박스
+display: inline-block 블록과 인라인의 중간형태
+display: none 보이지 않음
+*/
+
+span {	display : none;
+		background-color:pink;
+		width:800px;
+		height:100px;
+		text-align:center;
+		}
+div:hover + span{display:block}
+</style>
+
+</head>
+<body>
+	<div>여기에 커서를 갖다 놓으세요</div>
+	<span>나는 보여요</span>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>가상클래스 선택자 - ':'  기호를 사용하는 선택자</title>
+<!-- 
+	가상 클래스는 콜론 뒤에 요소를 선택할수 있는 특별한 상태를 표현하는
+	예약어가 따릅니다
+	a:link 는 하이퍼링크 요세에 대한 링크를 의미 (방문하지 않은 링크 스타일)
+	a:visited는 방문한 링크의 경우를 의미합니다-->
+	
+<style>
+a:link {color:orange;}
+
+a:hover {text-decoration:none; color:black}
+
+a:visited{color:red}
+a:active{color:green}
+</style>
+</head>
+<body>
+ <h1>링크 선택자</h1>
+ 
+ 
+ <!-- href 속성을 적용하지 않아서 스타일 적용되지않음 -->
+ <h1><a>nothing</a></h1>
+ <h1 ><a href="http://www.daum.net">다음</a></h1>
+ <h1><a href="http://www.w3.org">W3C</a></h1>
+</body>
+</html>

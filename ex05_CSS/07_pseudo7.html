@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>가상클래스 선택자 - ':'  기호를 사용하는 선택자</title>
+<!-- 
+1. A E - A 요소에 포함되어 있는 요소중 E 요소를 선택한다(후손요소)
+2. A>E - A 요소의 바로 아래에 포함되어 있는 E요소를 선택한다(자손요소)
+3. A+E - A 요소의 다음으로 나오는 E 요소를 선택한다(형제요소)-->	
+<style>
+p {font-size:10pt}
+h3::after {content : "(ⓒsblim)" ; font-size:10pt}
+h3 strong {font-style:italic}
+p strong {color:red}
+p>strong{color:blue}
+h3+p {font-style:italic}
+
+</style>
+</head>
+<body>
+    <h3>
+      <strong>스타일시트</strong> 이해하기 
+    </h3> 
+    
+    <p>이 예제는 
+      <span>
+        <strong>CSS</strong>의 개념 
+      </span>을 설명합니다.
+      <br>
+      <a href="https://www.w3schools.com/">selector</a>의
+      <a href="http://www.naver.com">조합</a>으로 스타일을 지정합니다.
+    </p>    
+    
+    <p>다음 
+      <strong>CSS 속성</strong> 예제로 이어집니다.  
+    </p>  
+  </body>
+
+</html>

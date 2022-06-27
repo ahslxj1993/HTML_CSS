@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>절대위치</title>
+
+<style>
+	div {width:100px; height: 100px}
+	
+	#box1{background-color:red}
+	#box2{background-color:blue}
+	
+	#box1:active {
+			position:absolute; /*절대위치 - 원하는 위치에 배치*/
+			/*수평좌표 : 부모요소의 왼쪽에서 30px 간격*/
+			left:30px;
+			/*수직좌표 : 부모요소의 위쪽에서 50px 간격*/
+			top:50px;
+			}
+	#box2:active {
+			position:absolute;
+			left:170px;
+			top:50px;
+			}
+
+</style>
+</head>
+<body>
+	<h3>절대위치</h3>
+	<div id=box1></div>
+	<div id=box2></div>
+</body>
+</html>

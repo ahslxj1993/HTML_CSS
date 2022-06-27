@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>상대위치</title>
+
+<style>
+	div {display:inline-block; width:100px; height: 100px;
+		border:1px solid lightgray; background:red;}
+	
+	#box1{
+		position:relative; /*상대위치*/
+		left:30px;/*수평좌표: 원래 위치에서 오른쪽으고 30px 이동배치*/
+		top: 50px;/*수직 좌표: 원래 위치에서 아래로 50px 이동배치*/
+		background-color:green;
+		}
+	#box2:hover{
+		position:relative; /*상대위치*/
+		right:20px;/*수평좌표: 원래 위치에서 오른쪽으고 30px 이동배치*/
+		bottom:20px;/*수직 좌표: 원래 위치에서 아래로 50px 이동배치*/
+		background-color:yellow;
+		}
+
+</style>
+</head>
+<body>
+	<h3>상대위치</h3>
+	<div></div>
+	<div></div>
+	<div id=box1></div>
+	<div id=box2></div>
+</body>
+</html>

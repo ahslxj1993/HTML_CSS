@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>색상 및 숫자 입력 예제</title>
+</head>
+<body>
+<h3>색상 및 숫자 입력 예제</h3>
+<form method=get action=result.html>
+	<p>표지색상 : <input type=color name=color></p>
+	
+	<!-- 화살표 버튼으로 숫자를 조정할 수 있는 입력 형식 -->
+	<p>제작권수 : <input type=number min=0 max=100 
+				step=10 value =20 name=number></p>
+				
+	<!-- 스크롤 바를 움직여서 일정한 범위의 숫자를 입력 -->
+	<p>표지 두께 : 0.1mm <input type=range min=1 max=5
+						value=3 name=range step=1>0.5mm</p>
+
+	<input type=submit value=전송>
+</form>
+</body>
+</html>

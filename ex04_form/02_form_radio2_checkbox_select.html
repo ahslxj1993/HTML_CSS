@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택 입력 예제</title>
+</head>
+<body>
+<h3>다양한 선택 입력</h3>
+
+	<form method ='get' action='result.html'>
+	
+	<p>회원여부:
+	<!-- checked: 초기에 선택 상태로 출력,
+		value : 이 요소가 선택된 상태에서 submit이 이루어지면 웹서버에 전송되는 값 -->
+		
+		<input type='radio' name='member' value='yes' checked>회원
+		<input type='radio' name='member' value='no' checked>비회원<br>
+		성별:
+		<input type='radio' name='gender' value='male' checked>남성
+		<input type='radio' name='gender' value='female' checked>여성<br>		
+	</p>
+	
+	<p>
+		 취미 (중복선택) :
+		<input   type ='checkbox' name='hobby' value='read'>독서
+		<input   type ='checkbox' name='hobby' value='movie' checked>영화
+		<input   type ='checkbox' name='hobby' value='music'>음악
+		<input   type ='checkbox' name='hobby' value='sports'>스포츠
+	</p>
+	
+	<p>
+		직업:
+		<!-- name: 요소의 이름
+			size:콤보 박스에서 보일수 있는 최대 항목의 개수로 기본값은 1
+			multiple : 다수 항목 선택 가능
+			selected : 초기에 선택 상태로 출력 -->
+		<select name='job1' size='1'>
+			<option value='student' selected>학생</option>
+			<option value='company'>회사원</option>
+			<option value='teacher'>교사</option>
+			<option value='sales'>자영업</option>
+			<option value='others'>기타</option>
+		</select>
+	</p>
+	
+		<input type="submit" value='전송'>
+	</form>
+</body>
+</html>
