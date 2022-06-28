@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+/*body 글꼴설정*/
+
+form {border: 3px solid #f1f1f1;}
+/*form의 테두리 설정*/
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/*input 태그의 type=text 속성과  type=password 속성의 
+width, padding, margin, display, border, box-sizing 설정*/
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/*button태그의 background-color, color,padding,margin,border,cursor(마우스 오버시 포인터모양 변경),
+width 변경 설정*/
+
+button:hover {
+  opacity: 0.8;
+}
+/*button태그 마우스오버시에 opacity(투명도) 설정*/
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+/*cancelbtn클래스의 width, padding, background-color 설정*/
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+/*imgcontainer클래스의 글씨크기 가운데정렬, margin 설정*/
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+/*img태그의 avatar클래스의 width, 테두리 둥글기 설정*/
+
+.container {
+  padding: 16px;
+}
+/*container 클래스의 padding 설정*/
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/*span태그의 psw클래스의 위쪽padding, 부모로부터의 위치 설정*/
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/*0배 확대에서 1배 확대까지 보여주는 animatezoom이라는 이름의 애니메이션*/
+
+body {
+  animation: animatezoom 0.6s
+}
+/*body 태그에 animatezoom애니메이션 0.6초동안 재생 , 한번만 보여줌*/
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="action_page.html" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>

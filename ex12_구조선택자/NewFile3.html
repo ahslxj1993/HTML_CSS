@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+.box{ width: 100px; height :100px}
+ 
+ /*1. 일반구조 선택자 - 특정한 위치에 있는 태그를 선택하는 선택자
+ 형식)nth-child (수열) : 형제관계중에서 앞에서 수열번째 태그를 선택
+ 1.	nth-child(2n) : 2,4,6, 번째 위치하는 태그를 선택
+ 2.	nth-child(2n+1) : 1,3,5 번째 위치하는 태그를 선택
+ 					단, n은 0 이상 이되 결괴는 1 이상의 양수
+ 3. nth-child (숫자) : 숫자번째 위치하는 태그를 선택*/
+ 
+ /*그외 일반구조 선택자
+ 1. first-child : 형제관계중에서 첫번째 위치하는 태그를 선택
+ 2. last-child : 형제관계중에서 마지막에 위치하는 태그를 선택
+ 3. nth-last-child(수열) : 형제관계중에서 뒤에서 수열번째의 태그를 선택*/
+ 
+.box:nth-child(3n+1){background-color:red}
+.box:nth-child(3n+2){background-color:green}
+.box:nth-child(3n){background-color:blue}
+</style>
+</head>
+<body>
+		<div class=box></div>
+		<div class=box></div>
+		<div class=box></div><div class=box></div>
+		<div class=box></div>
+		<div class=box></div><div class=box></div>
+		<div class=box></div>
+		<div class=box></div><div class=box></div>
+		<div class=box></div>
+		<div class=box></div>
+</body>
+</html>

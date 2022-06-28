@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+<style>
+.container {
+position:absolute;
+left:20cm;
+top:20cm;
+cursor:pointer}
+
+.bar1,.bar2,.bar3{
+padding:5px;
+margin:6px 0;
+width:35px;
+height:5px;
+position:relative;
+background:black}
+
+@keyframes deg_minus_45{
+0%{transform:rotate(0deg)}
+100%{transform:rotate(-45deg)}
+}
+
+@keyframes deg_45{
+0%{transform:rotate(0deg)}
+100%{transform:rotate(45deg)}
+}
+
+div.container:hover .bar1{
+animation:deg_minus_45 1s 1}
+
+div.container:hover .bar2{
+display:none}
+
+div.container:hover .bar3{
+animation:deg_45 1s 1}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+</body>
+
+
+</html>
